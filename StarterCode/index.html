@@ -18,35 +18,48 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-12">
-        <h1>D3Times</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12  col-md-9">
-        <div id="scatter">
-          <!-- We append our chart here. -->
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12  col-md-9">
-        <div class="article">
-          <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1>Gnarly associations between income and behavoral risk</h1>
+                <hr>
+                <p>
+                   In this Data Driven Document (D3), We explore certain associations between demographics and 
+                   behavioral risk factors using survey data collected from the American Community Survey (ACS) 
+                   and the Behavioral Risk Factor Surveillance System (BRFSS) during the year 2014. 
+                   Each marker represents an individual state in the USA. 
+                </p>
+                <p>Click on the axis titles to explore!  </p>
+            </div>
 
-  <!-- Footer-->
-  <div id="footer">
-    <p>The Coding Boot Camp&copy;2018</p>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
-  <script type="text/javascript" src="assets/js/app.js"></script>
+            <div class="col-md-10 col-md-offset-1">
+                <hr>
+                <div class="chart">
+                </div>
+            </div>
+
+            <div class="col-md-8 col-md-offset-2">
+                <p>The largest correlation we observed is between smoking and poverty rate.
+                   The improverished are much more likely to smoke than their richer brethren (corr = 0.66). 
+                   Similarly the lower a state's household income, the higher the rate of obesity (corr = 0.65).
+                   Wealthier folks (presumably with higher educational attainment) afford themselves 
+                   better nutrition. Overall the higher a state's median household income, the lower 
+                   the prevalence of behavioral risk factors.
+                   <hr>
+                   Conversely there is less of a relationship between age and the various risk factors we examined.
+                   Correlations range from 0.01 (age vs. smoking) to 0.39 (age vs. lacking healthcare).
+                </p>             
+            </div>
+        </div>
+    </div>
+
+<!-- Footer-->
+<div id="footer">
+  <p>The Coding Boot Camp&copy;2019</p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
 
 </body>
 
