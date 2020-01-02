@@ -47,8 +47,7 @@ crGet();
 
 // The Labels for our Axes
 
-// A) Bottom Axis
-// ==============
+// A) X Axis
 
 // We create a group element to nest our bottom axes labels.
 svg.append("g").attr("class", "xText");
