@@ -74,24 +74,24 @@ xTextRefresh();
 // 1. Poverty
 xText
   .append("text")
-  .attr("y", -26)
-  .attr("data-name", "poverty")
+  .attr("y", -30)
+  .attr("data-name", "Poverty")
   .attr("data-axis", "x")
   .attr("class", "aText active x")
-  .text("In Poverty (%)");
+  .text("Poverty (%)");
 // 2. Age
 xText
   .append("text")
   .attr("y", 0)
-  .attr("data-name", "age")
+  .attr("data-name", "Age")
   .attr("data-axis", "x")
   .attr("class", "aText inactive x")
   .text("Age (Median)");
 // 3. Income
 xText
   .append("text")
-  .attr("y", 26)
-  .attr("data-name", "income")
+  .attr("y", 30)
+  .attr("data-name", "Income")
   .attr("data-axis", "x")
   .attr("class", "aText inactive x")
   .text("Household Income (Median)");
@@ -123,29 +123,29 @@ yTextRefresh();
 // 1. Obesity
 yText
   .append("text")
-  .attr("y", -26)
-  .attr("data-name", "obesity")
+  .attr("y", -30)
+  .attr("data-name", "Obesity")
   .attr("data-axis", "y")
   .attr("class", "aText active y")
-  .text("Obese (%)");
+  .text("Obesity (%)");
 
 // 2. Smokes
 yText
   .append("text")
   .attr("x", 0)
-  .attr("data-name", "smokes")
+  .attr("data-name", "Smokes")
   .attr("data-axis", "y")
   .attr("class", "aText inactive y")
   .text("Smokes (%)");
 
-// 3. Lacks Healthcare
+// 3. Access to Healthcare
 yText
   .append("text")
-  .attr("y", 26)
-  .attr("data-name", "healthcare")
+  .attr("y", 30)
+  .attr("data-name", "Healthcare")
   .attr("data-axis", "y")
   .attr("class", "aText inactive y")
-  .text("Lacks Healthcare (%)");
+  .text("Acces to Healthcare (%)");
 
 // 2. Import our .csv file.
 // ========================
