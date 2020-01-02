@@ -15,135 +15,15 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/d3Style.css">
 
-  <style type="text/css">
-    body {
-      color: #888;  
-      font-family:  serif;  
-      font-size:15px;
-    }
-    
-    svg {
-      margin-top: 2.5em;
-      margin-bottom: 2.5em;
-    }
-      
-    .axis {
-      font: 12px sans-serif;   
-    }
-    
-    .axis path,
-    .axis line {
-      fill: none;
-      stroke: #aaa; 
-      shape-rendering: crispEdges;
-    }
-    
-    .axis text {
-      fill: #858585;
-    }
-    
-    .title {
-      font: 500 100px serif; 
-      fill: #e5e5e5;
-    }
-    
-    .party {
-      font: 500 35px serif;
-      fill: #e5e5e5;
-    }
-    
-    .incr {
-      font: 500 35px serif;
-      fill: #e5e5e5; 
-      cursor: pointer;
-    }
-    
-    .incr:hover {
-      fill: #ccc;
-    }
-    
-    .circle {
-      stroke: white;
-      stroke-width: 0.2px;
-  
-       }
-    .grabbable {  /*https://stackoverflow.com/questions/5697067*/
-    cursor: move; /* fallback if grab cursor is unsupported */
-    cursor: grab;
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
-    }
-    .circle:active {
-      /*Closed hand*/
-      /*https://stackoverflow.com/questions/5697067*/
-        cursor: grabbing;
-        cursor: -moz-grabbing;
-        cursor: -webkit-grabbing;
-    }
-    
-    .circle:hover {
-      fill-opacity: 0.8;
-    }
-    
-    #searchform {
-      padding-bottom: 5px;
-    }
-    
-    #formholder {
-      position: absolute;
-      right: 50px;
-      top: 25px;
-      /*font: 16px serif;*/
-    }
-    
-    .incrbtn {
-      font: 500 30px serif;
-      cursor: pointer;
-      background-color: Transparent;
-      background-repeat:no-repeat;
-      border: none;
-      cursor:pointer;
-      overflow: hidden;
-      /*outline:none;*/
-      color: #e5e5e5;
-    }
-    
-    .incrbtn:hover {
-      color: #ccc;
-    }
-    
-    #upclick {
-      position: absolute;
-      left: 55px;
-      bottom: 160px;
-      /*font: 16px serif;*/
-    }
-    
-    #downclick {
-      position: absolute;
-      left: 55px;
-      bottom: 125px;
-      /*font: 16px serif;*/
-    }
-    
-    #select {
-      padding:5px 0px;
-    }
-    
-    input {
-      font: 14px serif;
-    }
-    
-    </style>
 </head>
-
 <body>
-  <div class="container">
+  <div class="header">
     <div class="row">
-      <div class="col-xs-12 col-md-12">
-        <h1>D3Times</h1>
+      <div class="col-xs-12 col-md-12 col-md-offset-0">
+        <h1>UNIT 16: D3Times</h1>
       </div>
     </div>
+  </div>  
     <div class="row">
       <div class="col-xs-12  col-md-9">
         <div id="scatter">
