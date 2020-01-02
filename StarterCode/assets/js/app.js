@@ -1,4 +1,4 @@
-/ Set up our chart
+// Set up our chart
 var svgWidth = 960;
 var svgHeight = 600;
 var margin = { top: 30, right: 40, bottom: 80, left: 100 };
@@ -87,16 +87,16 @@ d3.csv("assets/data/data.csv")
     xScale.domain([xMin, xMax]);
     yScale.domain([yMin, yMax]);
   // // Initialize tooltip
-  //   var toolTip = d3.tip()
-  //     .attr("class", "tooltip")
-  //     .offset([80, -60])
-  //     .html(function (d) {         
-  //       return (`${d.state}<br>Poverty: ${d.poverty}<br>Lacks Healthcare: ${d.healthcare}`);
-  //   });
-  // console.log("test");
-  // // Create tooltip
-  // chartGroup.call(toolTip);
-  // console.log("test2");
+    var toolTip = d3.tip()
+       .attr("class", "tooltip")
+       .offset([80, -60])
+       .html(function (d) {         
+         return (`${d.state}<br>Poverty: ${d.poverty}<br>Lacks Healthcare: ${d.healthcare}`);
+     });
+   console.log("test");
+   // Create tooltip
+   chartGroup.call(toolTip);
+   console.log("test2");
 
   // create chart
     chartGroup.selectAll("circle")
@@ -140,14 +140,14 @@ d3.csv("assets/data/data.csv")
         .attr("class","stateText");
 
   //     // display tooltip on mouseover
-  //       .on("mouseover", function (d) {
-  //           toolTip.show(d,this);
-  //       })
-  //     // hide tooltip on mouseout
-  //       .on("mouseout", function (d, i) {
-  //           toolTip.hide(d);
-  //       });
-  // console.log("test3");
+         .on("mouseover", function (d) {
+             toolTip.show(d,this);
+         })
+       // hide tooltip on mouseout
+         .on("mouseout", function (d, i) {
+             toolTip.hide(d);
+         });
+   console.log("test3");
 
   // create x-axis
     chartGroup.append("g")
@@ -163,15 +163,15 @@ d3.csv("assets/data/data.csv")
   // Append axes titles
 
   // add main x-axis title
-    // chart.append("text")
-    //     .attr("transform", `translate(${width - 30},${height - 5})`)
-    //     .attr("class", "axis-text")
-    //     .text("Demographics")
+     chart.append("text")
+         .attr("transform", `translate(${width - 30},${height - 5})`)
+         .attr("class", "axis-text")
+         .text("Demographics")
 
-    // chart.append("text")
-    //     .attr("transform", `translate(15,60)rotate(270)`)
-    //     .attr("class", "axis-text")
-    //     .text("Health Risks")
+     chart.append("text")
+         .attr("transform", `translate(15,60)rotate(270)`)
+         .attr("class", "axis-text")
+         .text("Health Risks")
 
   // add x-axis titles
     povertyLabel=chartGroup.append("text")
