@@ -1,5 +1,5 @@
 // Set height and width of SVG
-var svgWidth = 960;
+var svgWidth = 900;
 var svgHeight = 500;
 
 // Set margin values
